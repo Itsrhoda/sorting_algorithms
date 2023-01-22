@@ -14,7 +14,7 @@ int get_max(int *array, int size)
 	for (max = array[0], i = 1; i < size; i++)
 	{
 		if (array[i] > max)
-			max = aray[i];
+			max = array[i];
 	}
 
 	return (max);
@@ -36,9 +36,9 @@ void counting_sort(int *array, size_t size)
 		return;
 
 	sorted = malloc(sizeof(int) * size);
-	if (sorted = NULL)
+	if (sorted == NULL)
 		return;
-	max = get_max(aray, size);
+	max = get_max(array, size);
 	count = malloc(sizeof(int) * (max + 1));
 	if (count == NULL)
 	{
