@@ -42,7 +42,7 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
 	{
 		swap_ints(array + root, array + large);
 		print_array(array, size);
-		max_heapify(aray, size, base, large);
+		max_heapify(array, size, base, large);
 	}
 }
 
